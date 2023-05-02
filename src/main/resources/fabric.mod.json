@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "xaerozoomout",
+  "version": "${version}",
+  "name": "XaeroZoomout",
+  "description": "Reduces the minimum zoom of Xaeros's World Map from 0.0625x to 0.0025x",
+  "authors": [
+    "notryken"
+  ],
+  "contact": {
+    "repo": "https://github.com/NotRyken/XaeroZoomout"
+  },
+  "license": "MIT",
+  "icon": "assets/xaerozoomout/icon.png",
+  "environment": "client",
+  "mixins": [
+    "XaeroZoomout.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
