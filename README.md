@@ -1,7 +1,7 @@
 # Xaero Zoomout
 
-Xaero Zoomout is a simple Minecraft Fabric mod that reduces the minimum zoom of 
-Xaero's World Map from 0.0625x to 0.0025x
+Xaero Zoomout is a simple Minecraft mod for Fabric and Forge, that reduces the minimum 
+zoom of Xaero's World Map from 0.0625x to 0.0025x.
 
 This makes it more suitable for long-distance exploration and usage on servers
 with large world borders.

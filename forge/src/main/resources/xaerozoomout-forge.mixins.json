@@ -1,0 +1,7 @@
+{
+  "parent": "xaerozoomout-common.mixins.json",
+  "package": "notryken.xaerozoomout.client.mixin",
+  "client": [
+    "MixinGuiMap"
+  ]
+}
