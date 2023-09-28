@@ -10,7 +10,7 @@ version = "${version}"
 displayName = "Xaero Zoomout"
 authors = "NotRyken"
 description = "Reduces the minimum zoom of Xaeros's World Map from 0.0625x to 0.0025x"
-logoFile = "icon.png"
+logoFile = "assets/xaerozoomout/icon.png"
 
 [[dependencies.xaerozoomout]]
 modId = "forge"
