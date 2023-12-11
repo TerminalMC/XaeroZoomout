@@ -1,27 +1,47 @@
 {
-  "schemaVersion": 1,
-  "id": "xaerozoomout",
-  "version": "${version}",
-  "name": "XaeroZoomout",
-  "description": "Reduces the minimum zoom of Xaeros's World Map from 0.0625x to 0.0025x",
-  "authors": [
-    "NotRyken"
-  ],
-  "contact": {
-    "homepage": "https://modrinth.com/mod/xaero-zoomout",
-    "sources": "https://github.com/NotRyken/XaeroZoomout",
-    "issues": "https://github.com/NotRyken/XaeroZoomout/issues"
-  },
-  "license": "MIT",
-  "icon": "assets/xaerozoomout/icon.png",
-  "environment": "client",
-  "mixins": [
-    "xaerozoomout-fabric.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.14.0",
-    "fabric": "*",
-    "minecraft": ">=1.20.2",
-    "xaeroworldmap": ">=1.34.1"
-  }
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "environment": "${mod_environment}",
+    "provides": [],
+    "accessWidener": "${mod_id}.accesswidener",
+    "entrypoints": {
+        "main": [],
+        "client": [],
+        "server": []
+    },
+    "mixins": [
+        "${mod_id}.mixins.json",
+        "${mod_id}.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14",
+        "minecraft": "~${min_minecraft_version}",
+        "java": ">=17"
+    },
+    "recommends": {
+        "xaeroworldmap": ">=${xwm_fabric_version}"
+    },
+    "suggests": {},
+    "conflicts": {},
+    "breaks": {},
+
+    "name": "${mod_name}",
+    "description": "${mod_description}",
+    "contact": {
+        "homepage": "${homepage_url}",
+        "sources": "${sources_url}",
+        "issues": "${issues_url}"
+    },
+    "authors": ["${mod_author}"],
+    "contributors": [],
+    "license": "${mod_license}",
+    "icon": "icon.png",
+    "custom": {
+        "xaerozoomout": {
+            "links": {
+                "formatSpec": "https://fabricmc.net/wiki/documentation:fabric_mod_json_spec"
+            }
+        }
+    }
 }

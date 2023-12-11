@@ -1,7 +1,7 @@
-package notryken.xaerozoomout.client.mixin;
+package notryken.xaerozoomout.mixin;
 
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.text.Text;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -9,12 +9,14 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import xaero.map.animation.SlowingAnimation;
 import xaero.map.gui.GuiMap;
-import xaero.map.gui.ScreenBase;
 import xaero.map.gui.IRightClickableElement;
+import xaero.map.gui.ScreenBase;
+
+import static net.minecraft.client.gui.screens.Screen.hasControlDown;
 
 @Mixin(value = GuiMap.class, remap = false)
 public abstract class MixinGuiMap extends ScreenBase implements IRightClickableElement {
-    protected MixinGuiMap(Screen parent, Screen escape, Text titleIn) {
+    protected MixinGuiMap(Screen parent, Screen escape, Component titleIn) {
         super(parent, escape, titleIn);
     }
 

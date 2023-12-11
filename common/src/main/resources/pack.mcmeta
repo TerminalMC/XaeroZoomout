@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": "Xaero Zoomout",
+        "description": "${mod_name}",
         "pack_format": 8
     }
 }
