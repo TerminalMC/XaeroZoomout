@@ -14,14 +14,6 @@ import xaero.map.gui.ScreenBase;
 
 @Mixin(value = GuiMap.class, remap = false)
 public abstract class MixinGuiMap extends ScreenBase implements IRightClickableElement {
-    protected MixinGuiMap(Screen parent, Screen escape, Component titleIn) {
-        super(parent, escape, titleIn);
-    }
-
-    @Shadow
-    private void closeDropdowns() {
-    }
-
     @Shadow
     private int lastZoomMethod;
     @Shadow
@@ -30,6 +22,12 @@ public abstract class MixinGuiMap extends ScreenBase implements IRightClickableE
     private SlowingAnimation cameraDestinationAnimZ;
     @Shadow
     private static double destScale;
+    @Shadow
+    private void closeDropdowns() {}
+
+    protected MixinGuiMap(Screen parent, Screen escape, Component titleIn) {
+        super(parent, escape, titleIn);
+    }
 
     @Inject(method = "changeZoom", at = @At(value = "HEAD"), cancellable = true)
     private void changeZoom(double factor, int zoomMethod, CallbackInfo ci) {

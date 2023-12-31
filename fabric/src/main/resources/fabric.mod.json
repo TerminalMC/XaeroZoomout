@@ -15,12 +15,12 @@
         "${mod_id}.fabric.mixins.json"
     ],
     "depends": {
-        "fabricloader": ">=0.14",
+        "fabricloader": ">=0.12",
         "minecraft": "~${min_minecraft_version}",
         "java": ">=17"
     },
     "recommends": {
-        "xaeroworldmap": ">=${xwm_fabric_version}"
+        "xaeroworldmap": "*"
     },
     "suggests": {},
     "conflicts": {},
