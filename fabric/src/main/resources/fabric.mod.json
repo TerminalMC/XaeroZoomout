@@ -16,8 +16,7 @@
     ],
     "depends": {
         "fabricloader": ">=0.12",
-        "minecraft": "~${min_minecraft_version}",
-        "java": ">=17"
+        "minecraft": ">=${minecraft_version}"
     },
     "recommends": {
         "xaeroworldmap": "*"
