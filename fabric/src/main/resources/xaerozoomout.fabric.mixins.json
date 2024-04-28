@@ -1,13 +1,12 @@
 {
     "required": true,
     "minVersion": "0.8",
-    "package": "notryken.${mod_id}.mixin",
-    "refmap": "${mod_id}.refmap.json",
+    "package": "${mod_group}.${mod_id}.mixin",
     "compatibilityLevel": "JAVA_17",
     "mixins": [
-        "MixinGuiMap"
     ],
     "client": [
+        "MixinGuiMap"
     ],
     "server": [
     ],
@@ -15,4 +14,3 @@
       "defaultRequire": 1
     }
   }
-  
