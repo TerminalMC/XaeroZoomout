@@ -26,11 +26,6 @@ fully zoomed out. With this mod, the display width is increased to about 760k.
 Note: Rendering the world map is quite CPU-intensive, so you'll probably experience
 some lag when fully zoomed out.
 
-### License
-
-Except where otherwise stated, XaeroZoomout source files are provided under the terms of the GNU LGPL-3.0-only 
-open-source license. For more information, refer to the provided LICENSE file.
-
 ### Contact
 
 [![Discord](https://img.shields.io/discord/1103153365216669797?logo=discord&label=Discord&color=%235865F2)](https://discord.gg/sSgQ9AF4mU)
