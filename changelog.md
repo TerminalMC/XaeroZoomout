@@ -1,1 +1,0 @@
-- Redesign mixin for XaeroPlus compat
