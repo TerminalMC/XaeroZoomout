@@ -3,9 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.notryken.xaerozoomout;
+package dev.terminalmc.xaerozoomout;
 
 public class XaeroZoomout {
 	public static final String MOD_ID = "xaerozoomout";
 	public static final String MOD_NAME = "XaeroZoomout";
+
+    public static void init() {
+    }
 }
