@@ -16,8 +16,7 @@
   "entrypoints": {
     "main": [],
     "client": ["${mod_group}.${mod_id}.${mod_name}Fabric"],
-    "server": [],
-    "modmenu": ["${mod_group}.${mod_id}.gui.screen.ModMenuIntegration"]
+    "server": []
   },
 
   "mixins": [
