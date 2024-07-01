@@ -5,9 +5,10 @@
 
 package dev.terminalmc.xaerozoomout;
 
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 
-@Mod(XaeroZoomout.MOD_ID)
+@Mod(value = XaeroZoomout.MOD_ID, dist = Dist.CLIENT)
 public class XaeroZoomoutNeoForge {
     public XaeroZoomoutNeoForge() {
         XaeroZoomout.init();
