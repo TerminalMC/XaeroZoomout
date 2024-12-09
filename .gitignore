@@ -8,6 +8,7 @@ run/
 runs/
 out/
 classes/
+.eclipse/
 
 # IDEA
 .idea/
@@ -23,4 +24,3 @@ classes/
 
 # Other
 .env
-/neoforge/.eclipse/

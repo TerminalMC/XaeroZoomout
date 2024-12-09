@@ -1,9 +1,12 @@
-# Builds the project and publishes the artifacts to GitHub and Modrinth
-# Requires GITHUB_TOKEN to have write permissions; if not, replace it with a custom token
-# Requires a Modrinth PAT MODRINTH_TOKEN
+# Builds the project and publishes the artifacts to GitHub, Modrinth and CurseForge
+# Modrinth publishing requires a Modrinth PAT MODRINTH_TOKEN
+#   Will skip without error if not present
+# CurseForge publishing requires a CurseForge API token CURSEFORGE_TOKEN
+#   Will skip without error if not present
 name: Release
 
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -31,7 +34,8 @@ jobs:
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
       - name: Build
-        run: ./gradlew build neoforge:githubRelease neoforge:modrinth neoforge:curseforge fabric:githubRelease fabric:modrinth fabric:curseforge --stacktrace
+#        run: ./gradlew build neoforge:publishGithub fabric:publishGithub --stacktrace
+        run: ./gradlew build neoforge:publishGithub neoforge:publishModrinth neoforge:publishCurseforge fabric:publishGithub fabric:publishModrinth fabric:publishCurseforge --stacktrace
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
