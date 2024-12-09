@@ -2,4 +2,4 @@
 
 ## 2.0.0
 
-- Update to mc1.21
+- Updated to mc1.21
