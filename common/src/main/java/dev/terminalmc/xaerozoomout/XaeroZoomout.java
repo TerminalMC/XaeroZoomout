@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 TerminalMC
+ * Copyright 2025 TerminalMC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,9 @@
 package dev.terminalmc.xaerozoomout;
 
 public class XaeroZoomout {
-	public static final String MOD_ID = "xaerozoomout";
-	public static final String MOD_NAME = "XaeroZoomout";
+
+    public static final String MOD_ID = "xaerozoomout";
+    public static final String MOD_NAME = "XaeroZoomout";
 
     public static void init() {
     }

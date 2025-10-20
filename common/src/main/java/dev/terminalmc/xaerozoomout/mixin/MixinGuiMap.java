@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 TerminalMC
+ * Copyright 2025 TerminalMC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,8 +21,12 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import xaero.map.gui.GuiMap;
 
-@Mixin(value = GuiMap.class, remap = false)
+@Mixin(
+        value = GuiMap.class,
+        remap = false
+)
 public abstract class MixinGuiMap {
+
     @ModifyExpressionValue(
             method = "changeZoom",
             at = @At(
