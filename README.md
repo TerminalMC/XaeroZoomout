@@ -1,5 +1,14 @@
 <div align="center"><center>
 
+## Archival Notice
+
+As of v1.42.0, extended zoom-out is a built-in option in Xaero's World Map, so this mod is no
+longer required.
+
+<img alt="Xaero's World Map Settings" width=500 src="https://raw.githubusercontent.com/TerminalMC/XaeroZoomout/HEAD/assets/images/xaerosworldmap_01.png">
+
+---
+
 <img alt="Icon" width=100 src="https://raw.githubusercontent.com/TerminalMC/XaeroZoomout/HEAD/common/src/main/resources/assets/xaerozoomout/icon.png">
 
 ## XaeroZoomout
